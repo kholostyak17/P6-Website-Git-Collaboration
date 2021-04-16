@@ -1,0 +1,11 @@
+/* Style the buttons */
+.navbar-brand btn{
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+/*  Hover to c change color  */
+.active, .btn:hover {
+  background-color: #666;
+  color: white;
+}
