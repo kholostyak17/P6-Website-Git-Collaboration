@@ -42,7 +42,7 @@
                         <img class="w-100 my-3" src="./assets/yellow.jpg" alt="">
                     </div>
                     <!-- columna del carousel -->
-                    <div class="carrusel col-10 border-danger border border-danger rounded">
+                    <div class="carrusel col-10 border-danger border border-primary rounded">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -50,7 +50,7 @@
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
                             <div class="carousel-inner">
-                                <div class="carousel-item active bg-white w-100 h-100">
+                                <div class="carousel-item active bg-white w-100 h-100 ">
                                     <img class="ropa d-block w-100 p-5" src="./assets/red.jpg" alt="First slide">
                                 </div>
                                 <div class="carousel-item bg-white">
@@ -77,17 +77,76 @@
                     </div>
                 </div>
                 <!--fila de la informacion desplegable-->
-                <div class="p-2">
-                    <p>DESCRIPCION 2......</p>
-                    <p>DESCRIPCION 23425364534E......</p>
+                <div class="mt-4">
+                    <div id="accordion">
+                        <div class="">
+                            <div class="-header border border-secondary" id="headingOne">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">
+                                        DESCRIPCIÓN
+                                    </button>
+                                </h5>
+                            </div>
+
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="mx-3 -body">
+                                    <p>Sudadera de algodón puro 100%.</p>
+                                    <p>Estilo moderno y urbano.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="-header border border-secondary" id="headingTwo">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        MATERIAL Y CUIDADO
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                data-parent="#accordion">
+                                <div class=" mx-3 -body">
+                                    <p>Tejido I: 55% ACRYLIC, 45% POLYAMIDE</p>
+                                    <p>MACHINE WASH AT MAX.TEMP. 30° C - MILD PROCESS</p>
+                                    <p>DO NOT BLEACH</p>
+                                    <p>DO NOT TUMBLE DRY</p>
+                                    <p>DO NOT DRY CLEAN</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="">
+                            <div class="-header border border-secondary" id="headingThree">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse"
+                                        data-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        CAMBIOS Y DEVOLUCIONES
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                data-parent="#accordion">
+                                <div class="mx-3 -body">
+                                    <P>Política De Envío
+                                        Entrega gratis para pedidos superiores a 30 EUROS.</P>
+                                    <p>Entrega estándar: 2-7 días laborables, precio de 5 EUROS</p>
+                                    <p>Si los productos no son lo que esperaba, se pueden devolver dentro de los 30 días
+                                        siguientes a la entrega.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!--columna de los inputs-->
             <div class="col-6 p-5 ">
-                <h1 class="text-center">SUDADERA</h1>
-                <h3 class="text-center">10$</h3>
-                <form class="mx-5" action="">
-                    <div class="input-group mb-3">
+                <p class="titulo text-center">Sudadera de algodon moderna</p>
+                <p class="precio text-center">19,99 €</p>
+                <form class="" action="">
+                    <div class="input-group m-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="size">Elige talla:</label>
                         </div>
@@ -99,10 +158,10 @@
                             <label for="green">Verde</label>
                             <input type="radio" name="color" id="green">
                             <label for="yellow">Amarillo</label>
-                            <input type="radio" name="color" id="yellow"></DIV>
-                        </select>
+                            <input type="radio" name="color" id="yellow">
+                        </DIV>
                     </div>
-                    <div class="input-group mb-3">
+                    <div class="input-group m-3">
                         <div class="input-group-prepend">
                             <label class="input-group-text" for="size">Elige talla:</label>
                         </div>

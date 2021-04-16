@@ -33,3 +33,10 @@
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
+
+.titulo{
+    font-size: 2em;
+}
+.precio{
+font-size: 1.5em;
+}
